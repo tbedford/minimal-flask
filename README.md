@@ -8,6 +8,6 @@ Returns hello world on index.
 
 ## TODO
 
-- [ ] Heroku Click to Deploy
-- [ ] Accept message as environment variable
+- [x] Heroku Click to Deploy
+- [x] Accept message as environment variable
 
