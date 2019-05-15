@@ -1,6 +1,14 @@
+import os
 from flask import Flask
+
+message = "Hello from Heroku"
+
 app = Flask(__name__)
+
+if 'MESSAGE' in os.environ['MESSAGE']:
+    message = os.environ['MESSAGE']
+    print("message: %s" % message)
 
 @app.route('/')
 def hello_world():
-    return "Hello from Heroku"
+    return '<b>' + message + '</b>'
