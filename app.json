@@ -5,7 +5,7 @@
     "env": {
         "MESSAGE": {
             "description": "A message to display.",
-            "value": "yes",
+            "value": "Type your message here...",
             "required": true
         }
     },
