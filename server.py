@@ -5,7 +5,7 @@ message = "Hello from Heroku"
 
 app = Flask(__name__)
 
-if 'MESSAGE' in os.environ['MESSAGE']:
+if 'MESSAGE' in os.environ:
     message = os.environ['MESSAGE']
     print("message: %s" % message)
 
