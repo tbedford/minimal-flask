@@ -6,7 +6,7 @@
         "MESSAGE": {
             "description": "A message to display.",
             "value": "Type your message here...",
-            "required": true
+            "required": false
         }
     },
     "buildpacks": [
