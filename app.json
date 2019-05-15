@@ -1,7 +1,7 @@
 {
     "name": "minimal-flask-app",
     "description": "Minimal Flask App - simply returns hello world on index.",
-    "repository": "https://github.com/tbedford/minimal-flask-app",
+    "repository": "https://github.com/tbedford/minimal-flask",
     "env": {
         "MESSAGE": {
             "description": "A message to display.",
