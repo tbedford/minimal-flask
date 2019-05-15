@@ -1,16 +1,24 @@
 {
-  "addons": [
-
-  ],
-  "buildpacks": [
-
-  ],
-  "env": {
-  },
-  "formation": {
-  },
-  "name": "minimal-flask",
-  "scripts": {
-  },
-  "stack": "heroku-18"
+    "name": "minimal-flask-app",
+    "description": "Minimal Flask App - simply returns hello world on index.",
+    "repository": "https://github.com/tbedford/minimal-flask-app",
+    "env": {
+        "MESSAGE": {
+            "description": "A message to display.",
+            "value": "yes",
+            "required": true
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "web": {
+            "quantity": 1,
+            "size": "free"
+        }
+    },
+    "stack": "heroku-18"
 }
